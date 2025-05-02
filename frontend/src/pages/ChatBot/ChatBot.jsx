@@ -27,7 +27,7 @@ const ChatBot = ({chatConfig}) => {
       const token = localStorage.getItem("token");
       console.log("token is : ", token);
       await axios.put(
-        "http://localhost:5000/api/chatCustomization",
+        "https://backend-kvr8.onrender.com/api/chatCustomization",
         payload,
         {
           headers: {

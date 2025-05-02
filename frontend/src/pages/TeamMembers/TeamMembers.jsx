@@ -35,7 +35,7 @@ const TeamMembers = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/users/team/${deleteFormData.id}`,
+        `https://backend-kvr8.onrender.com/api/users/team/${deleteFormData.id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -75,7 +75,7 @@ const TeamMembers = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/users/team/${memberId}`,
+        `https://backend-kvr8.onrender.com/api/users/team/${memberId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -122,7 +122,7 @@ const TeamMembers = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/users/team/${editFormData.id}`,
+        `https://backend-kvr8.onrender.com/api/users/team/${editFormData.id}`,
         { firstName, lastName, email, designation },
         {
           headers: {
@@ -144,7 +144,7 @@ const TeamMembers = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/users/team",
+          "https://backend-kvr8.onrender.com/api/users/team",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -184,7 +184,7 @@ const TeamMembers = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/users/team",
+        "https://backend-kvr8.onrender.com/api/users/team",
         { firstName, lastName, email, designation },
         {
           headers: {

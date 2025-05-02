@@ -23,7 +23,7 @@ const Analytics = () => {
     const fetchTotalChats = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/analytics/total-chats', {
+        const response = await axios.get('https://backend-kvr8.onrender.com/api/analytics/total-chats', {
           headers: {
             Authorization: `Bearer ${token}`,
           }
@@ -43,7 +43,7 @@ const Analytics = () => {
     const fetchResolvedTickets = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/analytics/resolved-chats', {
+        const response = await axios.get('https://backend-kvr8.onrender.com/api/analytics/resolved-chats', {
           headers: {
             Authorization: `Bearer ${token}`,
           }
@@ -70,7 +70,7 @@ const Analytics = () => {
     const fetchMissedChats = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/analytics/missed-chats', {
+        const response = await axios.get('https://backend-kvr8.onrender.com/api/analytics/missed-chats', {
           headers: {
             Authorization: `Bearer ${token}`,
           }
@@ -90,7 +90,7 @@ const Analytics = () => {
     const fetchAverageReplyTime = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/analytics/average-reply-time', {
+        const response = await axios.get('https://backend-kvr8.onrender.com/api/analytics/average-reply-time', {
           headers: {
             Authorization: `Bearer ${token}`,
           }
@@ -110,7 +110,7 @@ const Analytics = () => {
     const fetchMissedChatsPerWeek = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/analytics/missed-chats-per-week', {
+        const response = await axios.get('https://backend-kvr8.onrender.com/api/analytics/missed-chats-per-week', {
           headers: {
             Authorization: `Bearer ${token}`,
           }

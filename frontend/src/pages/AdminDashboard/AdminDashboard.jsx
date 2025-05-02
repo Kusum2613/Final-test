@@ -11,12 +11,12 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchTickets = async (tab) => {
       const token = localStorage.getItem("token");
-    let endpoint = "http://localhost:5000/api/tickets";
+    let endpoint = "https://backend-kvr8.onrender.com/api/tickets";
 
     if (tab === "Resolved") {
-      endpoint = "http://localhost:5000/api/tickets/resolved";
+      endpoint = "https://backend-kvr8.onrender.com/api/tickets/resolved";
     } else if (tab === "Unresolved") {
-      endpoint = "http://localhost:5000/api/tickets/unresolved";
+      endpoint = "https://backend-kvr8.onrender.com/api/tickets/unresolved";
     }
       try {
         const response = await axios.get(endpoint, 

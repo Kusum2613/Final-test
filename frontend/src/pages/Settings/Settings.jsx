@@ -15,7 +15,7 @@ const Settings = () => {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:5000/api/users/profile", {
+        const res = await axios.get("https://backend-kvr8.onrender.com/api/users/profile", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -55,7 +55,7 @@ const Settings = () => {
     try {
       const token = localStorage.getItem("token"); // Or use cookie
       await axios.put(
-        "http://localhost:5000/api/users/profile",
+        "https://backend-kvr8.onrender.com/api/users/profile",
         { firstName, lastName, email, password },
         {
           headers: {

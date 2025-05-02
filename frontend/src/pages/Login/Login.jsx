@@ -45,7 +45,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://backend-kvr8.onrender.com/api/auth/login",
         {
           email: loginData.email,
           password: loginData.password,

@@ -33,7 +33,7 @@ const ContactCenter = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/chats",
+        "https://backend-kvr8.onrender.com/api/chats",
         {
           ticketId: activeTicket.id,
           sender: "admin",
@@ -71,7 +71,7 @@ const ContactCenter = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/tickets/${activeTicket.id}/status`,
+        `https://backend-kvr8.onrender.com/api/tickets/${activeTicket.id}/status`,
         { status: "Resolved" },
         {
           headers: {
@@ -100,7 +100,7 @@ const ContactCenter = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/tickets/contactsCenter",
+          "https://backend-kvr8.onrender.com/api/tickets/contactsCenter",
           {
             headers: {
               Authorization: `Bearer ${token}`,
